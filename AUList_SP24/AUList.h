@@ -14,6 +14,8 @@ public:
 	ItemType GetItem(ItemType item, bool& found);
 	void PutItem(ItemType item);
 	void DeleteItem(ItemType item);
+	void ResetList();
+	ItemType GetNextItem();
 
 private:
 	ItemType Items[MAX_ITEMS];

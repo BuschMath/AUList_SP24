@@ -58,6 +58,19 @@ void AUList::DeleteItem(ItemType item)
 	}
 }
 
+void AUList::ResetList()
+{
+	loc = -1;
+}
+
+ItemType AUList::GetNextItem()
+{
+	loc++;
+	return Items[loc];
+}
+
+
+
 int AUList::findItem(ItemType item)
 {
 	int i = 0;
